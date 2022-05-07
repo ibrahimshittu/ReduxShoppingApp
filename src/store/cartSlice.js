@@ -41,6 +41,9 @@ const cartSlice = createSlice({
             state.itemslist = [];
             state.itemQuantity = 0;
             state.showCart = false;
+        },
+        setShowCart: ( state, action) => {
+            state.showCart = true;
         }
     }
 })
