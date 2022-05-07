@@ -1,7 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./Cart.css";
 const Cart = () => {
-  const quantity = 5;
+
+  const select = useSelector((state) => state.cart.totalQuantity);
+  const quantity = select;
   return (
     <div className="cartIcon">
       <h3>Cart: {quantity} Items</h3>
