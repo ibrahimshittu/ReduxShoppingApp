@@ -10,9 +10,6 @@ const Product = ({ name, id, imgURL, price }) => {
     dispatch(addItem({ id, name, price }));
   }
 
-  const select = useSelector((state) => state.cart.itemslist);
-  console.log(select)
-
 
   return (
     <div className="card">

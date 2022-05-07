@@ -43,11 +43,11 @@ const cartSlice = createSlice({
             state.showCart = false;
         },
         setShowCart: ( state, action) => {
-            state.showCart = true;
+            state.showCart = !state.showCart;
         }
     }
 })
 
-export const { addItem, removeItem, clearCart } = cartSlice.actions;
+export const { addItem, removeItem, clearCart, setShowCart } = cartSlice.actions;
 
 export default cartSlice;
